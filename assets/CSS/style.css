@@ -11,6 +11,12 @@
     box-sizing: border-box;
 }
 
+*::selection{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-shadow: none;
+}
+
 html{
     font-size: 62.5%;
 }
@@ -89,31 +95,90 @@ header{
 label{
     height: 15px;
     width: 25px;
+    z-index: 70;
 }
 
-label span{
+label div{
     position: relative;
     display: block;
     height: 3px;
     width: 25px;
     border-radius: 30px;
-    background: #fff
+    background: #fff;
+    transition: 0.5s !important;
 }
 
-label:hover span{
-    background: #000;
-}
-
-label span:nth-child(1){
+label div:nth-child(1){
     top: 0;
 }
 
-label span:nth-child(2){
+label div:nth-child(2){
     top: 4px;
 }
 
-label span:nth-child(3){
+label div:nth-child(3){
     top: 8px;
+}
+
+input{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -500px;
+    z-index: 10;
+    background-color: #000;
+}
+
+.right ul{
+    width: 100%;
+    display: none;
+}
+
+
+.right ul li{
+    list-style: none;
+    font-size: 1.7rem;
+    letter-spacing: 3px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.right li a{
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.right .portfolio{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+input:checked + nav{
+    z-index: 50 !important;
+}
+
+input:checked + .right ul{
+    display: block !important;
+}
+
+input:checked + .right + header .mobile-menu{
+    margin-top: -15px;
+}
+
+input:checked + .right + header .mobile-menu div:nth-child(1){
+    transform: rotate(-45deg);
+    top: 14px;
+}
+
+input:checked + .right + header .mobile-menu div:nth-child(2){
+    transform: rotate(-45deg);
+    opacity: 0;
+    top: 10px;
+}
+
+input:checked + .right + header .mobile-menu div:nth-child(3){
+    transform: rotate(45deg);
 }
 
 img{
@@ -137,7 +202,7 @@ main{
     width: 60%;
     position: absolute;
     bottom: 0;
-    left: 180px;
+    left: 28vh;
     z-index: 5 !important;
 }
 
@@ -167,7 +232,7 @@ main{
 
 .name {
     position: absolute;
-    top: 50%;
+    top: 44%;
     left: -270px;
     transform: translateY(-50%);
     font-size: 90px;
@@ -258,4 +323,99 @@ footer{
 
 footer a:hover{
     transform: scale(1.1);
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 1090px){
+    .menu{
+        display: none;
+    }
+
+    footer{
+        font-size: 1rem;
+    }
+
+    .header-section section:nth-child(2){
+        margin-left: 0;
+    }
+
+    .text{
+        right: 5vh !important;
+    }
+}
+
+@media screen and (max-width: 900px){
+    header a{
+        font-size: 1.1rem;
+    }
+    .name{
+        display: none;
+    }
+
+    .text{
+        left: 27vh;
+    }
+    .text h1{
+        font-size: 8.1rem;
+    }
+
+    footer{
+        width: 90%;
+        left: 28vh;
+    }
+}
+
+@media screen and (max-width: 800px){
+    label{
+        position: absolute;
+        right: 15px;
+    }
+
+    .logo{
+        position: absolute;
+        left: 15px;
+    }
+
+    .header-section section:nth-child(2), .header-section section:nth-child(3){
+        display: none;
+    }
+
+    .header-section section:nth-child(1){
+        justify-content: space-between;
+        width: 100% !important;
+        height: 100%;
+    }
+
+    .right ul{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .image{
+        top: 35%;
+        left: 10%;
+        width: 80%;
+        height: 30%;
+        box-shadow: 5px 5px 10px #000;
+    }
+
+    .text{
+        left: 10%;
+        top: 25%;
+    }
+
+    .text h1{
+        font-size: 5rem;
+    }
+
+    .text p{
+        margin-top: -28px;
+    }
+
+    footer{
+        left: 0;
+        width: 100%;
+    }
 }
