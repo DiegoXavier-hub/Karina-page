@@ -18,15 +18,21 @@
             <script src="assets/JS/html5shiv.js"></script>
         <![endif]-->
 
+        <!--AOS-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!--Animate.css-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
         <title>Karina Nates</title>
 
     </head>
     <body>
 
+        <div class="right" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="900"></div>
+
         <header>
             <nav class="header-section">
-                <section>
+                <section  data-aos="fade-right" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-delay="400">
                     <span>UNSPLASH</span>
                     <label>
                         <span></span>
@@ -34,36 +40,51 @@
                         <span></span>
                     </label>
                 </section>
-                <section>
+                <section  data-aos="fade-right" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-delay="700">
                     <a href="#">COLLECTION</a>
                     <a href="#">EXPLORE</a>
                 </section>
-                <section>
+                <section  data-aos="fade-left" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-delay="900">
                     <a href="#">SEARCH</a>
-                    <img src="assets/img/profile.jpg" alt="">
+                    <img src="assets/img/profile.jpg" alt="" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="900">
                 </section>
             </nav>
         </header>
 
         <main>
 
-            <div class="image"></div>
+            <div class="image" data-aos="fade-right" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-delay="200"></div>
 
             <div class="text">
-                <h1>karina tes</h1>
-                <p>Fashion Photographer</p>
+                <h1 data-aos="fade-left" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-delay="400">karina tes</h1>
+                <p data-aos="fade-left" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-delay="900">Fashion Photographer</p>
             </div>
         
-            <div class="name">karina tes</div>
+            <div class="name" data-aos="fade-right" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-delay="600">karina tes</div>
 
+            <section class="menu-container">
+                <section class="menu">
+                    <hr class="animate__animated animate__fadeInRight">
+                    <div>
+                        <a href="#" class="animate__animated animate__fadeInRight">PROFILE</a>
+                        <a href="#" class="animate__animated animate__fadeInRight">PORTFOLIO</a>
+                        <a href="#" class="animate__animated animate__fadeInRight">CONTACT</a>
+                    </div>
+                </section>
+            </section>
         </main>
 
-        <footer>
-
+        <footer  class="animate__animated animate__fadeInUp">
+            <a href="#">UNSPLASH.COM</a>
+            <a href="#">@KARINATES</a>
+            <a href="#">KARINATES.COM</a>
         </footer>
-        
-        <!-- JavaScript -->
-        <script src="vendor/Bootstrap4/js/bootstrap.min.js"></script>
+
+        <!--AOS-->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 
     </body>
 </html>
