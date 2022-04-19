@@ -345,7 +345,7 @@ footer a:hover{
     }
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 915px){
     header a{
         font-size: 1.1rem;
     }
@@ -354,7 +354,7 @@ footer a:hover{
     }
 
     .text{
-        left: 27vh;
+        left: 5vh;
     }
     .text h1{
         font-size: 8.1rem;
@@ -363,6 +363,15 @@ footer a:hover{
     footer{
         width: 90%;
         left: 28vh;
+    }
+    .image{
+        left: 5vh;
+        width: 700px;
+        top: 15vh;
+    }
+    footer{
+        left: 0;
+        width: 100%;
     }
 }
 
@@ -392,9 +401,9 @@ footer a:hover{
     }
 }
 
-@media screen and (max-width: 760px){
+@media screen and (max-width: 799px){
     .image{
-        top: 35%;
+        top: 42%;
         left: 10%;
         width: 80%;
         height: 30%;
@@ -417,5 +426,11 @@ footer a:hover{
     footer{
         left: 0;
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 300px){
+    footer{
+        display:none;
     }
 }
