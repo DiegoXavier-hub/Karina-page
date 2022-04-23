@@ -271,7 +271,7 @@ main{
     width: 200px;
     height: 1px;
     background-color: #fff;
-    animation-delay: 0.8s;
+    animation-delay: 2.6s;
 }
 
 .menu a{
@@ -283,17 +283,17 @@ main{
 }
 
 .menu a:nth-child(1){
-    animation-delay: 0.9s;
+    animation-delay: 2.7s;
 }
 
 .menu a:nth-child(2){
     color: #fff;
     font-weight: 500;
-    animation-delay: 1.2s;
+    animation-delay: 3s;
 }
 
 .menu a:nth-child(3){
-    animation-delay: 1.4s;
+    animation-delay: 3.3s;
 }
 
 .menu a:hover{
@@ -318,7 +318,7 @@ footer{
     justify-content: space-around;
     letter-spacing: 3px;
     z-index: 20 !important;
-    animation-delay: 1.8s;
+    animation-delay: 3.5s;
 }
 
 footer a:hover{
